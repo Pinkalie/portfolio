@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Julie Lim</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Julie Lim</a>
+            <ul class="nav-links">
+                <li><a href="#apropos">À propos de moi</a></li>
+                <li><a href="#projets">Mes projets</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="#contact">Me contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="accueil">
+            <div class="terminal-card">
+                <div class="terminal-bar">portfolio.html — administration système & réseaux</div>
+                <div class="terminal-content">
+                    <p class="command">$ QuiSuisJe</p>
+                    <h1>Julie Lim</h1>
+                    <p class="subtitle">Étudiante en Informatique</p>
+                    <p class="intro">
+                        Passionnée par l’administration système, le réseau et l’automatisation. Découvrez mes projets, mes compétences et mon parcours en BUT Informatique.
+                    </p>
+                    <div class="btn-row">
+                        <a href="#projets" class="btn">Voir mes projets</a>
+                        <a href="cv.html" class="btn">Découvrir mon CV</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="photo-box">
+                <img src="moi.jpg" alt="Photo de Julie Lim">
+            </div>
+        </section>
+
+        <section id="apropos">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-grid">
+                <div class="photo-box">
+                    <img src="iut.png" alt="IUT du Littoral Côte d’Opale">
+                </div>
+
+                <div class="panel">
+                    <p>
+                        Actuellement en BUT Informatique à l’IUT du Littoral Côte d’Opale à Calais, je me forme aux systèmes, aux réseaux, à la cybersécurité et à l’automatisation.
+                    </p>
+
+                    <p>
+                        Mon objectif est de développer des compétences solides pour administrer, sécuriser et maintenir des infrastructures informatiques fiables.
+                    </p>
+
+                    <div class="skills">
+                        <div class="skill">
+                            <strong>Systèmes</strong> Linux, Debian, Windows Server, gestion des utilisateurs et services.
+                        </div>
+                        <div class="skill">
+                            <strong>Réseaux</strong> Cisco, VLAN, routage, firewall, adressage IP et sécurisation.
+                        </div>
+                        <div class="skill">
+                            <strong>Virtualisation</strong> Proxmox, XCP-ng, machines virtuelles, déploiement de services.
+                        </div>
+                        <div class="skill">
+                            <strong>Automatisation</strong> Scripts Python et PowerShell pour simplifier les tâches IT.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projets">
+            <h2 class="section-title">Mes projets</h2>
+
+            <div class="projects-list">
+                <details class="project-card" open>
+                    <summary>
+                        <div class="project-title">
+                            <h3>Migration d’un serveur de fichiers</h3>
+                            <span>Administration système · droits d’accès · sauvegarde</span>
+                        </div>
+                    </summary>
+                    <div class="project-content">
+                        <p>
+                            Projet réalisé en entreprise autour de l’organisation des partages, de la gestion des droits utilisateurs et de la préparation d’une migration vers une infrastructure plus propre et plus maintenable.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Windows Server</span>
+                            <span class="tag">Active Directory</span>
+                            <span class="tag">Droits NTFS</span>
+                            <span class="tag">Veeam</span>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="project-card">
+                    <summary>
+                        <div class="project-title">
+                            <h3>Infrastructure de virtualisation</h3>
+                            <span>Cluster · haute disponibilité · stockage</span>
+                        </div>
+                    </summary>
+                    <div class="project-content">
+                        <p>
+                            Mise en place et étude d’une infrastructure de virtualisation avec plusieurs hôtes, dans le but de mieux comprendre la haute disponibilité, le stockage partagé et le déploiement de machines virtuelles.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Proxmox</span>
+                            <span class="tag">XCP-ng</span>
+                            <span class="tag">Ceph</span>
+                            <span class="tag">HA</span>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="project-card">
+                    <summary>
+                        <div class="project-title">
+                            <h3>Configuration réseau Cisco</h3>
+                            <span>Routage · VLAN · ACL · sécurité réseau</span>
+                        </div>
+                    </summary>
+                    <div class="project-content">
+                        <p>
+                            Travaux pratiques réalisés sur Packet Tracer autour de la configuration réseau : adressage IP, VLAN, routage dynamique, ACL et sécurisation des échanges entre différents segments du réseau.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Cisco</span>
+                            <span class="tag">Packet Tracer</span>
+                            <span class="tag">VLAN</span>
+                            <span class="tag">OSPF</span>
+                            <span class="tag">ACL</span>
+                        </div>
+                    </div>
+                </details>
+
+                <details class="project-card">
+                    <summary>
+                        <div class="project-title">
+                            <h3>Automatisation de tâches IT</h3>
+                            <span>Support informatique · scripts · gain de temps</span>
+                        </div>
+                    </summary>
+                    <div class="project-content">
+                        <p>
+                            Création de scripts pour automatiser certaines tâches répétitives, faciliter le support informatique et fiabiliser les actions d’administration sur des postes ou serveurs.
+                        </p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">PowerShell</span>
+                            <span class="tag">Support IT</span>
+                            <span class="tag">Automatisation</span>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Me contacter</h2>
+            <div class="contact-box">
+                <p>
+                    Vous pouvez me contacter pour échanger au sujet de mon parcours, de mes projets ou d’une opportunité professionnelle.
+                </p>
+                <p><strong>Email :</strong> ton.email@example.com</p>
+                <p><strong>LinkedIn :</strong> <a href="#" target="_blank">Mon profil LinkedIn</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a href="#" target="_blank">LinkedIn</a>
+        </div>
+        <div>
+            <a href="#contact">Me contacter</a> · <a href="mentions-legales.html">Mentions légales</a>
+        </div>
+    </footer>
+</body>
+
+</html>
